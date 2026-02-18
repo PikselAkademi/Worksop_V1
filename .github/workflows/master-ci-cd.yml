@@ -36,7 +36,7 @@ jobs:
         run: dotnet publish V1.sln --configuration Release --output ./pub --no-build
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3,
+        uses: actions/upload-artifact@v3
         with:
           name: v1-publish
           path: ./pub
