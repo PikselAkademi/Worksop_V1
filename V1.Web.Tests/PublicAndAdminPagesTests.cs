@@ -31,7 +31,7 @@ public class PublicAndAdminPagesTests
         response.EnsureSuccessStatusCode();
 
         var html = await response.Content.ReadAsStringAsync();
-        Assert.Contains("Yönetim Paneli", html);
+        Assert.Contains("Yönetimxxx Paneli", html);
         Assert.Contains("home", html, StringComparison.OrdinalIgnoreCase);
     }
 
