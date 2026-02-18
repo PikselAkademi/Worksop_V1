@@ -1,0 +1,10 @@
+@model V1.Web.Models.ContentPageViewModel
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="py-4">
+    <h1>@Model.Title</h1>
+    <p class="lead">@Model.Body</p>
+    <small class="text-muted">Son güncelleme (UTC): @Model.UpdatedAtUtc.ToString("u")</small>
+</div>
